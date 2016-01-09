@@ -36,13 +36,24 @@
        </ul>
        </div>
        <div style="height: 500px; padding-top: 630px; position: absolute; left: 50%; width: 100px; margin-left: 20px;">
-          <button type="button" class="btn btn-info">About</button>
+          <button type="button" class="btn btn-info" onclick="about_btn_onclick()">About</button>
        </div>
-
+       <div style="height: 50px; padding-top: 700px; position: absolute; left: 50%; width: 800px; margin-left: -400px;">
+           <p style="color:white"> 当你想说再见的时候，请三思，请回回头，想想当初遇见的时候是多么不容易</p>
+           <p style="color:white"> When you're about to say goodbye, think twice, look back, and remember how hard it was to say hello </p>
+        </div>
+       <audio autoplay="autoplay">
+           <source src="music/skycity.mp3" type="audio/mpeg">
+       </audio>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="js/jquery-1.11.3.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+    <script>
+        function about_btn_onclick() {
+            window.location.replace("about.html");
+        }
+    </script>
   </body>
 </html>
 
